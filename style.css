@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #6a1b9a; /* Purple */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #6a1b9a; /* Purple */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    animation: slideUp 1.5s ease-in-out;
+  }
+  
+  .btn {
+    background-color: white;
+    color: #6a1b9a;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #6a1b9a;
+    animation: zoomIn 2s ease-in-out;
+  }
+  
+  /* Portfolio Section */
+  .portfolio {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    width: 30%;
+    height: 50%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .gallery-item img {
+     height: 50%;
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #6a1b9a;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background-color: #6a1b9a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0); }
+    to { transform: scale(1)  }
+  }
